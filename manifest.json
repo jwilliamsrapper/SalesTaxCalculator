@@ -1,14 +1,12 @@
 {
     "name": "Sales Tax Calculator",
-    "version": "1.0",
-    "description": "See total cost befoe you proceed to check out.",
+    "version": "1.1",
+    "description": "See total cost before you proceed to check out.",
     "manifest_version": 2,
     "icons": {"128": "Calc_128.png"},
     "browser_action": {
         "default_icon": "Calc_48.png",
         "default_popup": "popup.html"
-       },
-       "permissions": [
-        "activeTab"
-        ]
+       }
+    
   }

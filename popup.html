@@ -8,12 +8,10 @@
 
 
     <style>
-
-  
     html, body{ 
-        font-family: 'Open Sans', 'sans-serif';
-        background-color: rgb(119, 0, 0);
-        font-weight: 100;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background: linear-gradient(black, gray);
+        font-weight: 200;
     }
 
     h1 {
@@ -36,6 +34,43 @@
       text-align: center;
     }
 
+    #state {
+
+    height: 25px;
+    font-size: medium;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(36, 36, 36);
+    font-size: large;  
+    }
+
+    input {
+
+    margin-top: 5px;
+    height: 25px;
+    background-color: #686868;
+    color: whitesmoke;
+    font-size: medium;
+    }
+
+    button {
+
+        height: 30px;
+        margin-top: 5px;
+        align-items: center;
+        color: white;
+        background-color: black;
+        
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(185, 185, 185);
+    padding-left: 10px;
+  }
+
+
+
+
     </style>
 </head>
 <body>
@@ -43,7 +78,7 @@
     <div class="modal-header">
        
         
-        <h1>See true total before checkout</h1>
+        <h1>Sales Tax Calculator</h1>
      
 
         <h2>Please Select State</h2>
@@ -107,12 +142,13 @@
 
         <form>
             <br>
-            <input title="text" placeholder="Enter Total Ex: 4.99" id="textInput"/>
+            <input title="text" placeholder="Enter Price e.g. 4.99" id="textInput" width="30"/>
         </form>
 
         <br> 
 
-        <button type="button" id="taxButton">Get True Total $</button>
+        <button type="button" id="taxButton">Calculate</button>
+        <button type="button" id="clearButton">Clear</button>
 
         <p>Results may vary based on city</p>
 

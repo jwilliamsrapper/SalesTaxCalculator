@@ -1,21 +1,24 @@
-// Class variables
+// clear button
+document.getElementById("clearButton").onclick = () =>{
+
+    document.getElementById("textInput").value = "";
+}
 
 
 
 
-
-// button 
-document.getElementById("taxButton").onclick = function(){
-    var dollarAmount = parseFloat(document.getElementById("textInput").value);
-    var getState = document.getElementById("state").value;
-    var stateTax;
+// calculate sales tax per each state
+document.getElementById("taxButton").onclick = () => {
+    let dollarAmount = parseFloat(document.getElementById("textInput").value);
+    let getState = document.getElementById("state").value;
+    let stateTax;
     
-    if(dollarAmount === NaN){
-        alert('Please enter the total of your shopping cart.');
+    if(isNaN(dollarAmount)){
+        alert("Please enter in a price e.g. 4.99");
     }
 
     if(getState == "None"){
-        alert('Please select a state.');
+        alert("Please select a state.");
     }
 
     // alabama
@@ -23,21 +26,21 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .13;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
      // Alaska
     if(getState == "AK"){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
      // Arizona
     if(getState == "AZ"){
 
         stateTax = .107;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
     // Arkansas
@@ -45,7 +48,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .11;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
     // California
@@ -53,7 +56,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .102;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
      // Colorado
@@ -61,7 +64,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .09;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -70,7 +73,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .06;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -81,7 +84,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = 0;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
    // District Of Columbia
@@ -89,7 +92,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .06;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
      // Florida
@@ -97,7 +100,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
      // Georgia
@@ -105,7 +108,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount).toFixed(2);
+        alert("Your estimated true total is $" + dollarAmount).toFixed(2);
     }
 
     //  Hawai
@@ -113,7 +116,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .047;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -122,7 +125,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -131,7 +134,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .101;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -140,7 +143,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -149,7 +152,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .102;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -160,7 +163,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .101;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
     
@@ -169,7 +172,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .06;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -179,7 +182,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .11;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -189,7 +192,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .055;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -198,7 +201,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .06;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -207,7 +210,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .0625;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -217,7 +220,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .06;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -227,7 +230,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .072;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -237,7 +240,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -248,7 +251,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .101;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -258,7 +261,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = 0;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -267,7 +270,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -277,7 +280,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -287,7 +290,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = 0;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -297,7 +300,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .12;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -307,7 +310,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -316,7 +319,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -326,7 +329,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -336,7 +339,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -345,7 +348,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -355,7 +358,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .11;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -365,7 +368,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = 0;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -375,7 +378,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -385,7 +388,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -395,7 +398,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .09;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -405,7 +408,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .06;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -415,7 +418,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .09;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -425,7 +428,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -435,7 +438,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .08;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -445,7 +448,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -455,7 +458,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -464,7 +467,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .06;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -473,7 +476,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .101;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -482,7 +485,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .07;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
     
@@ -492,7 +495,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .065;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
 
 
@@ -501,7 +504,7 @@ document.getElementById("taxButton").onclick = function(){
 
         stateTax = .06;
         dollarAmount = dollarAmount + dollarAmount * stateTax;
-        alert("Your esitmated true total is $" + dollarAmount.toFixed(2));
+        alert("Your estimated true total is $" + dollarAmount.toFixed(2));
     }
   
 
